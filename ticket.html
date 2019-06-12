@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+         <title>Land of Colors_Ticket</title>
+    </head>
+    <body bgcolor = "AA98A9">
+        <br><br><br><br><br>
+        <img src = "/image/티켓소_회전목마.png" width = 500px align = left>
+        <img src = "/image/티켓소_설명.png" width = 800px align = center>
+        <img src="/image/티켓소.png" width = 500px onmouseover="this.src='/image/티켓소_눌렀을때.png';" onmouseout="this.src='/image/티켓소.png';"/ align = right onClick = "ticket_sum();">
+        
+        
+        <Script language = "javascript">
+            function ticket_sum(){
+                answer = confirm("티켓 예매하시러 오셨습니까?");
+
+                if(answer == true){
+                    sum = prompt("예매하실 티켓 수를 작성해주세요! (ex. 2)"," ");
+                    alert("(ง •̀_•́)ง 여기 " + sum + "장의 티켓입니다! 즐거운 하루 되세요!")
+                }else
+                    alert("๑•ิ.•ั๑ 다음에 또 와주세요!");
+            }//ticket_sum
+        </Script>
+    </body>
+</html>
